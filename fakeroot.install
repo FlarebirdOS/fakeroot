@@ -1,0 +1,13 @@
+#!/bin/sh
+
+post_install() {
+    usr/sbin/ldconfig -r .
+}
+
+post_upgrade() {
+    usr/sbin/ldconfig -r .
+}
+
+pre_remove() {
+    usr/sbin/ldconfig -r .
+}
